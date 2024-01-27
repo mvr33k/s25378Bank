@@ -1,16 +1,19 @@
 package org.example.s25378Bank;
 
 public class Klient {
-    public Klient(int id, double saldo) {
-        this.id=id;
+    public Klient(double saldo) {
+        ;
+        this.id=++idCount;
         this.saldo=saldo;
     }
 
-    private int id;
+    private Integer id;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
+
+    private static Integer idCount=0;
 
     private double saldo;
 

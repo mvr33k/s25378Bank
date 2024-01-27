@@ -7,7 +7,7 @@ public class Klient {
         this.saldo=saldo;
     }
 
-    private Integer id;
+    private int id;
 
     public Integer getId() {
         return id;

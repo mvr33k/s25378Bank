@@ -15,7 +15,7 @@ public class KlientStorage {
         klientList.add(klient);
     }
 
-    public Optional<Klient> findById(Integer id) {
+    public Optional<Klient> findById(int id) {
         return getAll().stream()
                 .filter(klient -> klient.getId().equals(id))
                 .findFirst();
